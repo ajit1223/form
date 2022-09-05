@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</head>
+
+<body>
+    <!-- Toggle Switch  -->
+    <div class="container mt-3">
+        <h2>Toggle Switch</h2>
+        <p>Try to submit the form with and without toggling the switch.</p>
+        <form action="/action_page.php">
+            <div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="mySwitch"
+                    name="darkmode" value="yes"><label class="form-check-label" for="mySwitch">Dark Mode</label>
+            </div><button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+<!-- Form Validation  -->
+    <div class="container mt-3">
+        <h3>Form Validation</h3>
+        <form class="was-validated">
+            <div class="mb-3 mt-3">
+            <label for="uname"class="form-label">Username:</label>
+                <input type="text"
+                    class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+<!-- Floating labels  -->
+<div  class= "mt-5">
+    <h3>Form Validation</h3>
+    <p>Try to submit the form</p>
+<form class="was-validated">
+        <div class=" form-floating mb-3 mt-3">
+            <input type="text"class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+        <label for="uname"class="form-label">Username:</label>
+        </div>
+        <div class=" form-floating mb-3 mt-3">
+            <input type="text number"class="form-control" id="password" placeholder="Password" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+        <label for="password"class="form-label">Username:</label>
+        </div>
+        <div class="form-check ">
+            <input class="form-check-input" type="checkbox" id="radio1"  name="oparateRadio" value="Option1">I Accept the all term and conditions
+            <label class="form-check-label" for="radio1">
+            </label>
+            </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form></div>
+</body>
+
+</html>
